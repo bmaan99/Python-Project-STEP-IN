@@ -1,5 +1,6 @@
 """This is the file with main function to call other functions of the module
 """
+
 from print_student_data import print_students
 from search_student_data import search_student
 from remove_student_data import remove_student
@@ -54,6 +55,7 @@ def main():
 
         elif user_input == 5:
             print("Thanks for using the Student database\nExiting Program.....")
+            input("\nPress any button to Exit!")
             return
 
         else:

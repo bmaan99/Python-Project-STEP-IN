@@ -29,9 +29,6 @@ def add_student():
         elif not phone_number.isnumeric() or len(phone_number) != 10:
             print("\nPhone number is not Valid\nMust be a number and 10 characters long\n")
 
-        elif not name.isalpha():
-            print("\nName is not Valid\nMust be a string\n")
-
         else:
             with open("data.txt", "a") as file:
                 file.write("\n" + roll_number + "," + name + "," + phone_number)
