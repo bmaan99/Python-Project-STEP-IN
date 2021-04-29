@@ -8,4 +8,4 @@ This program uses a multifile approach where each file is used to perform differ
 |:-------:|:---------------------------:|:-----------------------------------------------------------------:|
 |    1    |            Source           |           All .py file of the project and data.txt file           |
 |    2    | Static Analysis Screenshots | Screenshots of the Static analysis done on each file using pylint |
-|    3    |       Windows EXE file      |           Executable file for windows PC of the project           |
+|    3    |       Windows EXE file      |           Executable file for Windows PC of the project           |
