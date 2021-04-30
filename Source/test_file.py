@@ -1,4 +1,3 @@
-from Source import main
 from Source import add_student_data
 from Source import remove_student_data
 from Source import search_student_data
