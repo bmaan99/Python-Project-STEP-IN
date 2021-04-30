@@ -43,15 +43,20 @@ def main():
 
         elif user_input == 2:  # This Option Will Add New Student In The Data file
             print("Add Student Menu:")
-            add_student()
+            roll_number = input("Enter the roll Number of student: ")
+            name = input("Enter name of the student: ")
+            phone_number = input("Enter phone number of student: ")
+            add_student(roll_number,name,phone_number)
 
         elif user_input == 3:  # This Option Will Search Student From The Data file
             print("Search Student Menu")
-            search_student()
+            roll_number = input("Enter the roll number of student to Remove: ")
+            search_student(roll_number)
 
         elif user_input == 4:  # This Option Will Remove Student From The Data file
             print("Remove Student Menu:")
-            remove_student()
+            roll_number = input("Enter the roll number of student to Search: ")
+            remove_student(roll_number)
 
         elif user_input == 5:
             print("Thanks for using the Student database\nExiting Program.....")

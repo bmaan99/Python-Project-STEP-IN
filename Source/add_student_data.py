@@ -15,23 +15,22 @@ def get_roll_list():
     return roll_list
 
 
-def add_student():
+def add_student(roll_number, name, phone_number):
     """This function student using the roll number, name and phone number from user input
     It validates the inputs from user and adds it to the database"""
     roll_list = get_roll_list()
     while True:
-        roll_number = input("Enter the roll Number of student: ")
-        name = input("Enter name of the student: ")
-        phone_number = input("Enter phone number of student: ")
         if roll_number in roll_list:
             print("\nThis student already exists!!\n")
+            return False
 
         elif not phone_number.isnumeric() or len(phone_number) != 10:
             print("\nPhone number is not Valid\nMust be a number and 10 characters long\n")
+            return False
 
         else:
             with open("data.txt", "a") as file:
                 file.write("\n" + roll_number + "," + name + "," + phone_number)
                 print("Student '"+name+"' added to the file")
-                break
-    file.close()
+                file.close()
+                return True
