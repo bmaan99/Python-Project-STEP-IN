@@ -60,7 +60,7 @@ def main():
 
         elif user_input == 5:
             print("Thanks for using the Student database\nExiting Program.....")
-            input("\nPress any button to Exit!")
+            input("\nPress ENTER key to Exit!")
             return
 
         else:
