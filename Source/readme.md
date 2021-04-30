@@ -7,3 +7,6 @@
 |    4    | remove_student_data.py |     File to remove a student from the data by receiving the roll number of student     |
 |    5    | search_student_data.py |  File to search for student using roll number and print details using the roll number  |
 |    6    |        data.txt        |               Text file which is used for storing and accessing the data               |
+|    7    |      test_file.py      |                   Test file testing all functions using the unit test                  |
+## Test Results
+![image](https://user-images.githubusercontent.com/54026778/116680656-8df38700-a9c9-11eb-8f49-fd2aa2dde1a5.png)
